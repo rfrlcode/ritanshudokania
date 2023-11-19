@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.0.5",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "18.16.1",
     "@types/react": "18.2.0",
@@ -22,10 +23,15 @@
     "next": "13.4.1",
     "next-contentlayer": "^0.3.2",
     "next-themes": "^0.2.1",
+    "npm-check": "^6.0.1",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
-  }
+  },
+  "description": "A template with Next.js 13 app dir, Contentlayer, Tailwind CSS and dark mode.",
+  "main": "contentlayer.config.js",
+  "author": "",
+  "license": "ISC"
 }
