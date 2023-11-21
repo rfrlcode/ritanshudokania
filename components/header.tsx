@@ -12,7 +12,7 @@ const Header = () => {
     return (
     <header>
         <Container>
-        <div className="flex items-center justify-between py-8">
+        <div className="flex items-center justify-between py-12">
             <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col space-y-1 text-sm leading-none">
                 <span className="text-lg font-bold">Ritanshu Dokania</span>
