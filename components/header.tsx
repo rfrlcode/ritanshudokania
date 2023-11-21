@@ -5,7 +5,6 @@ import {useTheme} from "next-themes"
 import {Button} from "./ui/button"
 import Container from "./ui/container"
 import { Sun, Moon, Linkedin } from "lucide-react";
-import { Menu } from "lucide-react";
 
 const Header = () => {
     const{theme, setTheme } = useTheme();
@@ -49,4 +48,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Header;
