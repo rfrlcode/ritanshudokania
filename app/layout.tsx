@@ -1,32 +1,27 @@
-import "./globals.css"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-import Header from "@/components/header"
+"use client";
 
-const inter = Inter({ subsets: ["latin"] })
+import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import Header from "@/components/Header";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 
-export const metadata = {
-  title: "Ritanshu Dokania",
-  description: "Engineer",
-}
+const inter = Inter({ subsets: ["latin"] });
 
-interface RootLayoutProps {
+
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-2xl mx-auto py-10 px-4">
-            <Header />
-            <main>{children}</main>
-          </div>
-
-        </ThemeProvider>
-      </body>
+      <body className={inter.className}>
+      <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+        <Header />
+        {children}
+      </ThemeProvider>
+        </body>
     </html>
   )
 }
