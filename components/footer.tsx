@@ -1,15 +1,11 @@
 "use client"
-import Container from "./ui/container"
 
 const Footer = () => {
     return (
-    <header>
-        <Container>
+    <footer className="container">
         <div className="flex items-center justify-between py-12">
-
         </div>
-        </Container>
-    </header>
+    </footer>
   )
 }
 

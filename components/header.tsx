@@ -3,15 +3,13 @@
 import Link from "next/link"
 import {useTheme} from "next-themes"
 import {Button} from "./ui/button"
-import Container from "./ui/container"
 import { Sun, Moon, Linkedin } from "lucide-react";
 
 const Header = () => {
     const{theme, setTheme } = useTheme();
     return (
-    <header>
-        <Container>
-        <div className="flex items-center justify-between py-12">
+    <header className="container">
+        <div className="flex items-center justify-between py-6">
             <Link href="/" className="flex items-center space-x-2">
             <div className="flex flex-col space-y-1 text-sm leading-none">
                 <span className="text-lg font-bold">Ritanshu Dokania</span>
@@ -43,7 +41,6 @@ const Header = () => {
 
             </div>
         </div>
-        </Container>
     </header>
   )
 }

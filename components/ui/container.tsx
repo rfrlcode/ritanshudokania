@@ -4,7 +4,7 @@ interface ContainerProps {
 
 const Container = ({ children }: ContainerProps) => {
     return (
-        <div className="container mx-auto w-full max-w-3xl">
+        <div className="flex min-h-screen flex-col py-8 max-w-3xl mx-auto">
             {children}
         </div>
     );
