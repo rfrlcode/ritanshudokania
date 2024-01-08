@@ -17,6 +17,22 @@ export default function Home() {
               <li>
                 <Link
                   className="flex flex-col space-y-1.5 !no-underline"
+                  href="https://giftcarddeals.xyz"
+                  target="_blank"
+                >
+                  <div>
+                    <span className="font-medium underline underline-offset-4 ">
+                      giftcarddeals
+                    </span>
+                  </div>
+                  <span className="text-muted-foreground">
+                    Find the best gift card deals on brands you love!
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="flex flex-col space-y-1.5 !no-underline"
                   href="https://www.referralhub.xyz"
                   target="_blank"
                 >
