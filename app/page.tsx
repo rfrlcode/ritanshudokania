@@ -17,6 +17,22 @@ export default function Home() {
               <li>
                 <Link
                   className="flex flex-col space-y-1.5 !no-underline"
+                  href="https://affeasy.link"
+                  target="_blank"
+                >
+                  <div>
+                    <span className="font-medium underline underline-offset-4 ">
+                      affeasy
+                    </span>
+                  </div>
+                  <span className="text-muted-foreground">
+                    One Stop Affiliate Link Creation
+                  </span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="flex flex-col space-y-1.5 !no-underline"
                   href="https://giftcarddeals.xyz"
                   target="_blank"
                 >
